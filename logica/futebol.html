@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Qual o número de vitórias"));
+    var empates = parseInt(prompt("Qual o número de empates?"));
+
+    //Vitórias valem 3 pontos, empates valem 1.
+
+    var pontos = vitorias * 3 + empates;
+
+</script>
