@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+    <button>Enviar senha</button>
+    <script>
+
+        var senha = [5, 3, 10];
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verifica() {
+
+            var achou = false;
+
+            for (posicao = 0; posicao < senha.length; posicao++) {
+
+                if(input.value == senha[posicao]) {
+                    alert("Senha correta");
+                    achou = true;
+                    break;
+                }
+    
+            }
+
+            if (achou == false) {
+
+            alert("Senha incorreta");
+            }
+
+        input.value = "";
+        input.focus();
+
+        }
+    
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+
+    </script>
+    
+</body>
+</html>
